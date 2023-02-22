@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\filip\Documents\BlazorTest</_PublishTargetUrl>
+    <History>True|2023-02-05T10:52:52.0125379Z;True|2023-02-04T22:26:51.0396042+01:00;True|2023-02-04T22:03:23.4352671+01:00;True|2023-02-04T18:20:31.3170861+01:00;False|2023-02-04T18:14:31.4936894+01:00;False|2023-02-04T18:08:56.7122420+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

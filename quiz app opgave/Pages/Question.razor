@@ -1,0 +1,37 @@
+﻿
+
+	<h3>@title</h3>
+
+			<form>
+			<input type="radio" id="0" value="0"  name="x" checked="@(chosen == 0)" @onchange="onAnsChanged">
+			<label for="0">@Svar.svarMuligheder[questIdx,0]</label><br>
+
+			<input type="radio" id="1" value="1"  name="x" checked="@(chosen == 1)" @onchange="onAnsChanged">
+			<label for="1">@Svar.svarMuligheder[questIdx,1]</label><br>
+
+			<input type="radio" id="2" value="2"  name="x" checked="@(chosen == 2)" @onchange="onAnsChanged">
+			<label for="2">@Svar.svarMuligheder[questIdx,2]</label><br>
+
+			<input type="radio" id="3" value="3"  name="x" checked="@(chosen == 3)" @onchange="onAnsChanged">
+			<label for="3">@Svar.svarMuligheder[questIdx,3]</label><br>
+			</form>
+			
+
+@code {
+	[Parameter]
+	public int questIdx { get; set; } // spørgsmål index
+	[Parameter]
+	public string? title { get; set; } // spørgsmålet
+	[Parameter]
+	public string ans { get; set; } // svaret
+
+	public int chosen { get; set; } = -1; // nuværende valgte radiobutton; starter på -1, men ændres til 0-3 afhængig af svar
+
+	public void onAnsChanged(ChangeEventArgs e){ // når brugeren vælger andet svar
+		chosen = Convert.ToInt32(e.Value.ToString());
+		ans = Svar.svarMuligheder[questIdx, chosen];
+		Console.WriteLine("Answer changed to " + ans);
+		Svar.userAnswer[questIdx] = ans;
+	}
+
+}

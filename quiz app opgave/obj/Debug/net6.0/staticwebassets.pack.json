@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\obj\\Debug\\net6.0\\build-gz\\T9zkGhnu.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\obj\\Debug\\net6.0\\scopedcss\\bundle\\quiz app opgave.styles.css",
+      "PackagePath": "staticwebassets\\quiz app opgave.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\quiz.json",
+      "PackagePath": "staticwebassets\\quiz.json"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\sample-data\\quiz.json",
+      "PackagePath": "staticwebassets\\sample-data\\quiz.json"
+    },
+    {
+      "Id": "C:\\Users\\filip\\OneDrive - TEC\\Programmering C\\quiz app opgave\\quiz app opgave\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.quiz app opgave.props",
+      "PackagePath": "build\\quiz app opgave.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.quiz app opgave.props",
+      "PackagePath": "buildMultiTargeting\\quiz app opgave.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.quiz app opgave.props",
+      "PackagePath": "buildTransitive\\quiz app opgave.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.quiz app opgave.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

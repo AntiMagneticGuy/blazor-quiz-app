@@ -1,0 +1,1 @@
+C:\Users\filip\OneDrive - TEC\Programmering C\quiz app opgave\quiz app opgave\obj\Release\net6.0\browser-wasm\PubTmp\Out\web.config

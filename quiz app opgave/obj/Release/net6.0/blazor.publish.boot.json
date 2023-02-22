@@ -1,0 +1,63 @@
+{
+  "cacheBootResources": true,
+  "config": [ ],
+  "debugBuild": false,
+  "entryAssembly": "quiz app opgave",
+  "icuDataMode": 0,
+  "linkerEnabled": true,
+  "resources": {
+    "assembly": {
+      "Microsoft.AspNetCore.Components.dll": "sha256-p0WIpuRkebYtKJeYRnA6yz+dsxDB1CrIXZli2gSvi2U=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-fsWQog9aNAyzw9xUKD6gpQK0lHXNA+\/zYF3i5ZXNOlI=",
+      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-3V+mhVXsSUWad6kGjs0l3aGXrmrUH9kFiv1FJfAhznY=",
+      "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-yNUivmV4a48Mkbc1Sz+XJ9Y8moJKjWJo6Z0haFMFrKQ=",
+      "Microsoft.Extensions.Configuration.dll": "sha256-OWH+xkIa4nRWGQutqm7dxgAY22jFGJlC+P6RzpDPrBE=",
+      "Microsoft.Extensions.Configuration.Json.dll": "sha256-boSewHLerYdMMQk1EahIMSbAXSrf7Kgky4CGjZ3uuto=",
+      "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-NAceT7aKzqRsGogCe8UyBWF01R1Qga83gXtq+v3p9V4=",
+      "Microsoft.Extensions.DependencyInjection.dll": "sha256-DG4t8WcZydm0E7u9Jba98S15iYEuwN\/7Lc4ZxhOzolk=",
+      "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-cXV5Iwz+aUN2Rq9LvMb+IgVedjMdzVTmd81ooy6E8WY=",
+      "Microsoft.Extensions.Logging.dll": "sha256-uvQcmI6XrSMo7BLb8B56Haq\/wjzfQPy1LJw48RmEmDs=",
+      "Microsoft.Extensions.Options.dll": "sha256-T5jVw2iu5DWOW7fDB+sTItI3LDyjsz2wT4pCJl0cma8=",
+      "Microsoft.Extensions.Primitives.dll": "sha256-Kk9trPYi6xuop+bJh7AertZVcNJkEyzyxW3andlyf5U=",
+      "Microsoft.JSInterop.dll": "sha256-zakAu\/qnqK7FrJXXJN2IQOvLJgWK2v3UeQ0xVA\/KBNA=",
+      "Microsoft.JSInterop.WebAssembly.dll": "sha256-x2yGz8pBovQquZX5Mo5ISpnUEiGqjjphevzf7Q8lyUw=",
+      "quiz app opgave.dll": "sha256-id7x3Ky+UusKpYQZE9LU\/e8gaIqaKAqkxiC5FdIRoiM=",
+      "System.Collections.Concurrent.dll": "sha256-UGICmHwDwj9pztqgqOc7wogTRVuGkYMafduVdsDnsGA=",
+      "System.Collections.dll": "sha256-FIUeJttPqEUEUhKvm0rQP2Hpn83IlYTOVZNK8I+fj2U=",
+      "System.ComponentModel.dll": "sha256-1VjKvt9RUXsCbk2ICef0i1HEnLOupAC17JQmeJ\/ysDM=",
+      "System.Console.dll": "sha256-HOncF7zkDdUGU+nJevtG9QosXQH9WOFTqqbDnVGLYP0=",
+      "System.Linq.dll": "sha256-ex9Es0Hwe3rYyNDUV0M6aTovU9SSCG87iXIOa1wTMdk=",
+      "System.Memory.dll": "sha256-Xi5ebfW554K0XPO+TJQ4E7cZRlFnGZEGI7+PfZsfmlc=",
+      "System.Net.Http.dll": "sha256-2T3\/FJMVthD+SMBj97ttYmKAQYlbwb9TjYpFP1mMK3I=",
+      "System.Net.Http.Json.dll": "sha256-Fn2oRcDjnn56rZlRVgQo0CX2ZEL4fthw2PHxtE4ke18=",
+      "System.Net.Primitives.dll": "sha256-86VZXmygGM5lRcYxuCqncdd0WcebEoWo8TwMHgoNxBU=",
+      "System.Private.CoreLib.dll": "sha256-oC0rshqh5ey+ZnPkw0VgDPswDEUydoyxuD0RvoywPq0=",
+      "System.Private.Runtime.InteropServices.JavaScript.dll": "sha256-1aXrrZlCRm0cxUZed2qByg\/2WVXVFF9rCiu\/AQjnImA=",
+      "System.Private.Uri.dll": "sha256-fZ647f7q72KBhotoO6W+yDKTjKgiagsRtcsOQ7Pa60g=",
+      "System.Runtime.CompilerServices.Unsafe.dll": "sha256-Cor0KCrsvgrEKmpSxuHFQcWmmm0sJn\/NiRRKNI1OLSk=",
+      "System.Runtime.dll": "sha256-Qyoq\/WohNtrbPuXZSTOx5N5HD4MJyK7a2ewCHibi5uw=",
+      "System.Text.Encodings.Web.dll": "sha256-WkeAeSV99GDlLC0RIQarUEl9we5jJuZtOWWsZEh8Giw=",
+      "System.Text.Json.dll": "sha256-\/tiQp6UxjQPI8v\/BrM8SXsKS32iXcWCGFXY4qTIkrdM="
+    },
+    "extensions": null,
+    "lazyAssembly": null,
+    "libraryInitializers": null,
+    "pdb": null,
+    "runtime": {
+      "dotnet.6.0.13.mz549ijgd6.js": "sha256-X\/515F1HEzgsDZdY8BJjt8YUwrWngHGZkMnpClhsrpY=",
+      "dotnet.timezones.blat": "sha256-WPkGR3RGK4nRx1ZL+q1a\/p6EefifFVyR\/nGNrnu\/vls=",
+      "dotnet.wasm": "sha256-trWQc47vmwSMQ8jsAJyJpCnryUG9nijwDdWSkWPXIPM=",
+      "icudt.dat": "sha256-Zuq0dWAsBm6\/2lSOsz7+H9PvFaRn61KIXHMMwXDfvyE=",
+      "icudt_CJK.dat": "sha256-WPyI4hWDPnOw62Nr27FkzGjdbucZnQD+Ph+GOPhAedw=",
+      "icudt_EFIGS.dat": "sha256-4RwaPx87Z4dvn77ie\/ro3\/QzyS+\/gGmO3Y\/0CSAXw4k=",
+      "icudt_no_CJK.dat": "sha256-OxylFgLJlFqixsj+nLxYVsv5iZLvfIKMpLf9hrWaChA="
+    },
+    "runtimeAssets": {
+      "dotnet.wasm": {
+        "behavior": "dotnetwasm",
+        "hash": "sha256-trWQc47vmwSMQ8jsAJyJpCnryUG9nijwDdWSkWPXIPM="
+      }
+    },
+    "satelliteResources": null
+  }
+}

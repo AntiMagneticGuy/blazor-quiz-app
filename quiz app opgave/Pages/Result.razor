@@ -1,0 +1,78 @@
+﻿
+@page "/result/{numb:int}"
+@page "/result"
+@inject NavigationManager NavManager
+
+
+@if (Svar.svarMuligheder[0, 0] != null && numb > 0) //tjekker om brugeren har taget quizzen, hvis ikke, giver dem start-siden i stedet
+{
+	<h1>Resultat: @score / @numb rigtige</h1>
+	<br />
+
+	@for (int i = 0; i < numb; i++)
+	{ // for hvert spørgsmål:
+		<!-- Laver en tabel med svarmuligheder for et spørgsmål. Farver enten rød eller grøn afhængig af om man er korrekt-->
+		<h4>@(
+				i + 1
+				)) Dit svar: <span style="@(Svar.userAnswer[i] == Svar.correctAnswer[i] ? "color: green" : "color: red")">@Svar.userAnswer[i]</span></h4>
+		<table>
+			<tr><th colspan="2">@Svar.question[i]</th></tr>
+			<tr>
+				<td style="@StyleAns(i,0)">@Svar.svarMuligheder[i,0]</td>
+				<td style="@StyleAns(i,1)">@Svar.svarMuligheder[i,1]</td>
+			</tr>
+			<tr>
+				<td style="@StyleAns(i,2)">@Svar.svarMuligheder[i,2]</td>
+				<td style="@StyleAns(i,3)">@Svar.svarMuligheder[i,3]</td>
+			</tr>
+		</table>
+		<br />
+		<br />
+	}
+}
+else{
+		NavManager.NavigateTo("/"); 
+	
+}
+
+<style>
+	td,th{
+		border: 3px solid black;
+		text-align: center;
+		padding: 10px;
+	}
+</style>
+
+
+@code {
+	[Parameter]
+	public int numb { get; set; } = -1; // number of questions
+	public int score { get; set; } = 0;
+
+	protected override async Task OnInitializedAsync() // score beregning:
+	{
+		if (numb > 0 && numb < 5)
+		{
+			for (int i = 0; i < numb; i++)
+			{
+				if (Svar.userAnswer[i] == Svar.correctAnswer[i])
+				{
+					score++;
+				}
+			}
+		}
+	}
+
+	public string StyleAns(int idx,int num){ // farven afhænger af svaret
+		// idx er spørgsmålets index, num er indekset af svarmulighederne.
+		string color = ""; // standard hvid
+		// gør brugeren svar rød
+		color = Svar.svarMuligheder[idx, num] == Svar.userAnswer[idx] ? "background-color: red" : color;
+		// gør det rigtige svar grønt; hvis brugeren svarede korrekt, så vil den røde farve erstattes af grøn
+		color = Svar.svarMuligheder[idx, num] == Svar.correctAnswer[idx] ? "background-color: green" : color;
+
+		return color; // giver farve tilbage, enten hvid, rød eller grøn
+	}
+	
+
+}

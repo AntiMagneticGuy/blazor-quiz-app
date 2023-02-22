@@ -1,0 +1,45 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = quiz_app_opgave
+build_property.RootNamespace = quiz_app_opgave
+build_property.ProjectDir = C:\Users\filip\OneDrive - TEC\Programmering C\quiz app opgave\quiz app opgave\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\filip\OneDrive - TEC\Programmering C\quiz app opgave\quiz app opgave
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/filip/OneDrive - TEC/Programmering C/quiz app opgave/quiz app opgave/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/OneDrive - TEC/Programmering C/quiz app opgave/quiz app opgave/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/OneDrive - TEC/Programmering C/quiz app opgave/quiz app opgave/Pages/Question.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/OneDrive - TEC/Programmering C/quiz app opgave/quiz app opgave/Pages/Result.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdWx0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/OneDrive - TEC/Programmering C/quiz app opgave/quiz app opgave/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/OneDrive - TEC/Programmering C/quiz app opgave/quiz app opgave/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2avcv0lqrb
+
+[C:/Users/filip/OneDrive - TEC/Programmering C/quiz app opgave/quiz app opgave/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-laiadxsswt

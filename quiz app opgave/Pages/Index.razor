@@ -1,0 +1,150 @@
+﻿@page "/"
+@inject HttpClient Http
+@inject NavigationManager NavManager
+
+<PageTitle>Index</PageTitle>
+
+<h1>Quiz App ala Filip + Jonathan!</h1>
+<br />
+@if (!started) {
+	<label>Choose number of questions: 
+					   <input type="number" id="number" min="1" max="4" @bind="number" /> <b style="color: red">@lessFour</b>
+	</label>
+	<br />
+
+	<label>Choose Category:
+ <select name="cats" id="cats" @bind="category">
+  <option value="Film">Movies</option>
+	  <option value="Sports">Sports</option>
+</select>
+</label>
+
+	<br />
+	<button @onclick="start">Start</button>
+}
+else{
+	<h3>Quiz Start:</h3>
+	@if (quests != null)
+	{
+		for (int idx = 0; idx < number; idx++) 
+		{
+		<div class="quest">
+						<Question title="@Svar.question[idx]" questIdx="@idx"></Question>
+		</div>
+		<br />
+		}
+		
+		<button @onclick="submit">Submit Answers</button>
+		<br />
+		<br />
+	}
+	
+}
+
+<style>
+	.quest{
+		border: 2px solid black;
+		padding: 10px;
+		width: auto;
+		
+	}
+</style>
+
+@code{
+
+	public string? category = "Film";
+	public int number = 1; // of questions
+	public bool started = false; // har brugeren trykket start
+
+	Spørgsmål? current; // brugt til at vælge et spørgsmål fra listen
+	string[] curArray = new string[4]; // en array brugt til at blande rækkefølgen af svarmulighederne
+	public string lessFour = ""; // denne værdi ændres hvis brugen indtaster uacceptabelt data
+
+	public void start(){
+		if (number != null && number < 5 && number > 0) // tjekker om antallet af spørgsmål er acceptabelt
+		{
+			updateQuest();
+			started = true;
+		}
+		else{
+			lessFour = "(Must be between 1 and 4)"; // hvis brugeren indtaster et uacceptabelt svar dukker denne tekst op
+		}
+	}
+
+	public void updateQuest(){ // vælger spørgsmål
+		bool loop;
+		Spørgsmål[] sList = new Spørgsmål[number]; //spørgsmålsliste
+		Random r = new Random(); // laver en random, så det ikke er samme rækkefølge hver gang
+		if (quests != null)
+		{
+				for (int i = 0; i < number; i++)
+				{
+				loop = true;
+					while (loop)
+					{
+						current = quests[r.Next(0, quests.Count - 1)]; // tilfældigt spørgsmål
+						if (current.category == category) // checker at kategorien er rigtig
+						{
+							quests.Remove(current); // fjerner så spørgsmålet ikke går igen
+							sList[i] = current;
+							
+
+							loop = false;
+						}
+						
+					}
+
+				}
+
+				//blander rækkefølgen
+				
+				sList = sList.OrderBy(x => r.Next()).ToArray();
+
+				for (int i = 0; i < number; i++)
+				{
+					current = sList[i];
+
+					for (int y = 0; y < current.incorrect_answers.Length; y++)
+					{
+
+						curArray[y] = current.incorrect_answers[y];
+					}
+					curArray[3] = current.correct_answer;
+
+					//blander rækkefølgen
+					curArray = curArray.OrderBy(x => r.Next()).ToArray();
+					// tilføjer dem til den statiske klasse 'Svar'
+					for (int x = 0; x < 4; x++)
+					{
+						Svar.svarMuligheder[i, x] = curArray[x];
+					}
+					Svar.correctAnswer[i] = current.correct_answer;
+					Svar.question[i] = current.question;
+
+				}
+
+				
+
+			
+		}
+	}
+
+	public void submit(){
+
+		NavManager.NavigateTo("/result/"+number.ToString()); // går til resultat siden. 
+		// number bruges som url parameter, så siden ved hvor mange spørgsmål blev besvaret.
+	}
+
+
+	public List<Spørgsmål>? quests;
+
+	protected override async Task OnInitializedAsync() // indlæser spørgsmål
+	{
+		quests = await Http.GetFromJsonAsync<List<Spørgsmål>>("./sample-data/quiz.json");
+	}
+
+	
+
+
+
+}
